@@ -13,8 +13,8 @@ public class Main {
         System.out.println("Task 2");
         //Task 2
         int[] arr2 = {10, 20, 30, 40, 50};
-        int min = 100;
-        int max = 0;
+        int min = 2_147_438_647;
+        int max = -2_147_438_648;
         for (int i : arr2) {
             if (i > max) {
                 max = i;
@@ -29,15 +29,14 @@ public class Main {
         //Task 3
         double[] arr3 = {12, 15, 4, 11, 9};
         double all = 0;
-        double division = 0;
         for (double i : arr3) {
             all += i;
-            division = all / 5;
         }
-        System.out.println("Средняя сумма трат за месяц составила " + division + " рублей");
+        all /= 5;
+        System.out.println("Средняя сумма трат за месяц составила " + all + " рублей");
         System.out.println("Task 4");
         //Task 4
-        char[] reverseFullName = { 'n', 'a', 'v', 'I', ' ', 'v', 'o', 'n', 'a', 'v', 'I'};
+        char[] reverseFullName = {'n', 'a', 'v', 'I', ' ', 'v', 'o', 'n', 'a', 'v', 'I'};
         for (int i = reverseFullName.length - 1; i >= 0; i--) {
             System.out.print(reverseFullName[i]);
         }
